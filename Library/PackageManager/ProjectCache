@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638544633752564217
-    m_Hash: 923024812
+      ticks: 638544772818912478
+    m_Hash: 238012571
   m_LockFileStatus:
     m_FilePath: D:/Umarfarooq/Unity/fusioned/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638544633752977914
-    m_Hash: 768471077
+      ticks: 638544772819431782
+    m_Hash: 542467650
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
@@ -257,12 +257,12 @@ m_ResolvedPackages:
   isDeprecated: 0
   deprecationMessage: 
   fingerprint: 
-- packageId: com.unity.nuget.mono-cecil@1.10.2
+- packageId: com.unity.nuget.mono-cecil@1.11.4
   testable: 0
   isDirectDependency: 1
-  version: 1.10.2
+  version: 1.11.4
   source: 1
-  resolvedPath: D:\Umarfarooq\Unity\fusioned\Library\PackageCache\com.unity.nuget.mono-cecil@1.10.2
+  resolvedPath: D:\Umarfarooq\Unity\fusioned\Library\PackageCache\com.unity.nuget.mono-cecil@1.11.4
   assetPath: Packages/com.unity.nuget.mono-cecil
   name: com.unity.nuget.mono-cecil
   displayName: Mono Cecil
@@ -309,13 +309,13 @@ m_ResolvedPackages:
     configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
-  datePublishedTicks: 637695695890000000
+  datePublishedTicks: 637852971930000000
   documentationUrl: 
   hasRepository: 1
   repository:
     type: git
     url: https://github.cds.internal.unity3d.com/unity/com.unity.nuget.mono-cecil.git
-    revision: 055a3837b0d05ce171c73a20741d59bc337662ed
+    revision: d0133ce672d724694b56bfd20672acf6f8737fec
     path: 
   unityLifecycle:
     version: 1.11.4

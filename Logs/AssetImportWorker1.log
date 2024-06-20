@@ -1,0 +1,471 @@
+Using pre-set license
+Built from '2022.3/staging' branch; Version is '2022.3.33f1 (b2c853adf198) revision 11716691'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19045) 64bit Professional' Language: 'en' Physical Memory: 16152 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2022.3.33f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker1
+-projectPath
+D:/Umarfarooq/Unity/fusioned
+-logFile
+Logs/AssetImportWorker1.log
+-srvPort
+62183
+Successfully changed project path to: D:/Umarfarooq/Unity/fusioned
+D:/Umarfarooq/Unity/fusioned
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [1524] Host "[IP] 192.168.0.120 [Port] 0 [Flags] 2 [Guid] 3667351230 [EditorId] 3667351230 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-FJC30AF) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [1524] Host "[IP] 192.168.0.120 [Port] 0 [Flags] 2 [Guid] 3667351230 [EditorId] 3667351230 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-FJC30AF) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+Refreshing native plugins compatible for Editor in 19.01 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2022.3.33f1 (b2c853adf198)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.33f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/Umarfarooq/Unity/fusioned/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1650 (ID=0x2188)
+    Vendor:   NVIDIA
+    VRAM:     3935 MB
+    Driver:   32.0.15.5585
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.33f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.33f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.33f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56412
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.33f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.33f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.33f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.014837 seconds.
+- Loaded All Assemblies, in  0.448 seconds
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Android Extension - Scanning For ADB Devices 270 ms
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.702 seconds
+Domain Reload Profiling: 1148ms
+	BeginReloadAssembly (140ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (40ms)
+	RebuildNativeTypeToScriptingClass (13ms)
+	initialDomainReloadingComplete (79ms)
+	LoadAllAssembliesAndSetupDomain (174ms)
+		LoadAssemblies (138ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (170ms)
+			TypeCache.Refresh (169ms)
+				TypeCache.ScanAssembly (154ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (703ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (631ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (407ms)
+			SetLoadedEditorAssemblies (5ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (3ms)
+			ProcessInitializeOnLoadAttributes (162ms)
+			ProcessInitializeOnLoadMethodAttributes (54ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.833 seconds
+Refreshing native plugins compatible for Editor in 7.64 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Package Manager log level set to [2]
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.780 seconds
+Domain Reload Profiling: 1610ms
+	BeginReloadAssembly (176ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (6ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (22ms)
+	RebuildCommonClasses (39ms)
+	RebuildNativeTypeToScriptingClass (13ms)
+	initialDomainReloadingComplete (57ms)
+	LoadAllAssembliesAndSetupDomain (545ms)
+		LoadAssemblies (410ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (243ms)
+			TypeCache.Refresh (216ms)
+				TypeCache.ScanAssembly (194ms)
+			ScanForSourceGeneratedMonoScriptInfo (18ms)
+			ResolveRequiredComponents (7ms)
+	FinalizeReload (781ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (594ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (35ms)
+			SetLoadedEditorAssemblies (4ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (68ms)
+			ProcessInitializeOnLoadAttributes (450ms)
+			ProcessInitializeOnLoadMethodAttributes (27ms)
+			AfterProcessingInitializeOnLoad (10ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (10ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 3.81 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3164 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 63 unused Assets / (72.9 KB). Loaded Objects now: 3621.
+Memory consumption went from 128.0 MB to 127.9 MB.
+Total: 3.057300 ms (FindLiveObjects: 0.276300 ms CreateObjectMapping: 0.206200 ms MarkObjects: 2.418800 ms  DeleteObjects: 0.152400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 722.755142 seconds.
+  path: Assets/Photon/PhotonLibs/netstandard2.0/Photon3Unity3D.xml
+  artifactKey: Guid(7015e500cd5b71244af56448dfb59804) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/PhotonLibs/netstandard2.0/Photon3Unity3D.xml using Guid(7015e500cd5b71244af56448dfb59804) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '94a982cfd54724f6d0c88acd91fbf784') in 0.109595 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Photon/Fusion/Runtime/Statistics/FusionNetworkObjectStatsGraphCombine.cs
+  artifactKey: Guid(19334f7ed30f4e8ea9f48a51534f09dd) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/Fusion/Runtime/Statistics/FusionNetworkObjectStatsGraphCombine.cs using Guid(19334f7ed30f4e8ea9f48a51534f09dd) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: 'ced13a2f2682bbd86bfcbf88ff80a7b2') in 0.035810 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Photon/Fusion/Runtime/NetworkObjectProviderDefault.cs
+  artifactKey: Guid(10533623ed629624c8acc6869f609bf2) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/Fusion/Runtime/NetworkObjectProviderDefault.cs using Guid(10533623ed629624c8acc6869f609bf2) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '1520a4581cac3263d0e24f070c4fea2c') in 0.004062 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Photon/Fusion/Assemblies/Fusion.Common.xml
+  artifactKey: Guid(97b7e36b3b8dc6e4384774134bd8b0d6) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/Fusion/Assemblies/Fusion.Common.xml using Guid(97b7e36b3b8dc6e4384774134bd8b0d6) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '23992fbc895fcaf4bc1dae2c551594b9') in 0.007940 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Photon/Fusion/Runtime/FusionBootstrapDebugGUIStartButtonOver.png
+  artifactKey: Guid(0bf88ab770bd548f2a1c9eecd1c8be06) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/Fusion/Runtime/FusionBootstrapDebugGUIStartButtonOver.png using Guid(0bf88ab770bd548f2a1c9eecd1c8be06) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: 'a49632ce10e3a265984968478c485031') in 0.061554 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Photon/Fusion/Editor/NetworkProjectConfigImporter.cs
+  artifactKey: Guid(66a64a17d0b40f34f9224317a5a84bf2) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/Fusion/Editor/NetworkProjectConfigImporter.cs using Guid(66a64a17d0b40f34f9224317a5a84bf2) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: 'cd1f299817ae6d6b224d015adfb0aae4') in 0.005179 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Photon/Fusion/Runtime/Fusion.Unity.asmdef
+  artifactKey: Guid(1baf1ffff1031e948b3b228ab3453251) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/Fusion/Runtime/Fusion.Unity.asmdef using Guid(1baf1ffff1031e948b3b228ab3453251) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '4b00594c3e875393c4cca2aeef2339e6') in 0.036963 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Photon/Fusion/build_info.txt
+  artifactKey: Guid(7d903aaee8321384991b6195565dae93) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/Fusion/build_info.txt using Guid(7d903aaee8321384991b6195565dae93) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: 'e24e8999ccb73d731bd23c0bf237d23c') in 0.003889 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Photon/Fusion/Editor/EditorResources/FusionHub/Fusion-hub-photon-cloud-32-dark.png
+  artifactKey: Guid(43725de47547036498287ad504fe9f9d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/Fusion/Editor/EditorResources/FusionHub/Fusion-hub-photon-cloud-32-dark.png using Guid(43725de47547036498287ad504fe9f9d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '71cdf4d5718ddfb40138ecb8a2fb9c65') in 0.013303 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Photon/Fusion/Editor/EditorResources/FusionHub/FusionHubSkin.guiskin
+  artifactKey: Guid(db84c499838991343a5a0a419616fcbe) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/Fusion/Editor/EditorResources/FusionHub/FusionHubSkin.guiskin using Guid(db84c499838991343a5a0a419616fcbe) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '09af0373bd3ee5d1ea249ae431335fe3') in 0.089435 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000138 seconds.
+  path: Assets/Photon/Fusion/Editor/EditorResources/Fusion-outline-box.png
+  artifactKey: Guid(223390825bdf7f7488411f7b7ca1c776) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/Fusion/Editor/EditorResources/Fusion-outline-box.png using Guid(223390825bdf7f7488411f7b7ca1c776) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: 'd04f82c5d12255595b14201dd4a97711') in 0.020102 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Photon/Fusion/Editor/EditorResources/FusionHub/Fusion-hub-icon.png
+  artifactKey: Guid(ee9f419d0e0655a4882d707f86b99f2c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/Fusion/Editor/EditorResources/FusionHub/Fusion-hub-icon.png using Guid(ee9f419d0e0655a4882d707f86b99f2c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '79222b751e9e72aa97c6af52625cd599') in 0.021254 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Photon/Fusion/Editor/EditorResources/FusionHub/Fusion-hub-skin-button.png
+  artifactKey: Guid(7c5bca332d2e7d548a317592d570b483) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/Fusion/Editor/EditorResources/FusionHub/Fusion-hub-skin-button.png using Guid(7c5bca332d2e7d548a317592d570b483) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: 'f0ce425be5050b2a7805c37fba777cbb') in 0.035470 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000151 seconds.
+  path: Assets/Photon/Fusion/Editor/EditorResources/FusionHub/Fusion-hub-skin-box.png
+  artifactKey: Guid(5c322c17376df3f448fb66679ef2af5d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/Fusion/Editor/EditorResources/FusionHub/Fusion-hub-skin-box.png using Guid(5c322c17376df3f448fb66679ef2af5d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '1e1e8d57f7171299d2490768e6759ba8') in 0.024766 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000127 seconds.
+  path: Assets/Photon/Fusion/Plugins/NanoSockets/Windows/nanosockets.dll
+  artifactKey: Guid(7b3f94104f169cc4e84342c38a1da2e3) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/Fusion/Plugins/NanoSockets/Windows/nanosockets.dll using Guid(7b3f94104f169cc4e84342c38a1da2e3) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '20ce89a63b51b80e6c9e56b484dde9d6') in 0.006641 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Photon/Fusion/Runtime/Statistics/FusionStatsGraphDefault.cs
+  artifactKey: Guid(a1c807bdcb1b9874697735bf2b27b24c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/Fusion/Runtime/Statistics/FusionStatsGraphDefault.cs using Guid(a1c807bdcb1b9874697735bf2b27b24c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '5700475bf9136c1e5d391182d25a103e') in 0.005373 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Photon/Fusion/Plugins/NanoSockets/iOS/libnanosockets.a
+  artifactKey: Guid(ce1995280bfb011488cdf6e584ba46bc) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/Fusion/Plugins/NanoSockets/iOS/libnanosockets.a using Guid(ce1995280bfb011488cdf6e584ba46bc) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: 'd22f3fd4c5d01cd93432be345e9d0598') in 0.004170 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Photon/Fusion/Editor/FusionHubWindow.cs
+  artifactKey: Guid(6d3bb7f5f74058d48bec8c16fc988309) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/Fusion/Editor/FusionHubWindow.cs using Guid(6d3bb7f5f74058d48bec8c16fc988309) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '68156d84c978024a939610cb25d00206') in 0.004926 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Photon/Fusion/release_history.txt
+  artifactKey: Guid(5705adcaad7c31b439ed88af045846a1) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/Fusion/release_history.txt using Guid(5705adcaad7c31b439ed88af045846a1) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: 'b345d0b359d3d4c47c24200739d99b98') in 0.003259 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Photon/Fusion/Runtime/FusionBasicBillboard.cs
+  artifactKey: Guid(25acde9209338d24d83cc1c826297be4) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/Fusion/Runtime/FusionBasicBillboard.cs using Guid(25acde9209338d24d83cc1c826297be4) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '786e3fb9c85cacfee6b62caaaea4edec') in 0.003728 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Photon/PhotonLibs/netstandard2.0/Photon3Unity3D.dll
+  artifactKey: Guid(6a558ae793155af4b9b9ab945fc64a0f) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/PhotonLibs/netstandard2.0/Photon3Unity3D.dll using Guid(6a558ae793155af4b9b9ab945fc64a0f) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '4e146a23ef056f4066f3d1f51903e5dc') in 0.005257 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Photon/PhotonLibs/WebSocket/PhotonWebSocket.asmdef
+  artifactKey: Guid(a10ff188cbfd201409863c062b118e1d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/PhotonLibs/WebSocket/PhotonWebSocket.asmdef using Guid(a10ff188cbfd201409863c062b118e1d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: 'e9b30aa993a174f3915c93cb4be72550') in 0.008421 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Photon/Fusion/Editor/EditorResources/Fusion.Unity.xml
+  artifactKey: Guid(b199a25aef303094f8d299987c726459) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/Fusion/Editor/EditorResources/Fusion.Unity.xml using Guid(b199a25aef303094f8d299987c726459) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '8a411b966bd6b636283341859194ce16') in 0.003998 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Photon/Fusion/Editor/NetworkPrefabsInspector.cs
+  artifactKey: Guid(2a91437e16a1edc41bde1ce3b0114aab) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/Fusion/Editor/NetworkPrefabsInspector.cs using Guid(2a91437e16a1edc41bde1ce3b0114aab) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: 'ce5034e5cfe6ef2a0a772621a83b5fca') in 0.004512 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Photon/Fusion/Runtime/Fusion.Unity.cs
+  artifactKey: Guid(4a69219964762b240b6138a56c829f26) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/Fusion/Runtime/Fusion.Unity.cs using Guid(4a69219964762b240b6138a56c829f26) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '8f1d45e06c247e6799518dbf0f977759') in 0.004933 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Photon/Fusion/Runtime/Statistics/Prefabs/SingleStatistics.prefab
+  artifactKey: Guid(483568e790e53a243a4f436e924e90b9) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/Fusion/Runtime/Statistics/Prefabs/SingleStatistics.prefab using Guid(483568e790e53a243a4f436e924e90b9) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '00cc41028b4b7ee623738a11a59ae6e7') in 0.148298 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 72
+========================================================================
+Received Import Request.
+  Time since last request: 0.079036 seconds.
+  path: Assets/Photon/Fusion/Runtime/Utilities/RunnerVisibility/RunnerAOIGizmos.cs
+  artifactKey: Guid(a09b7c3c2f0604fef93beb7057001dbb) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/Fusion/Runtime/Utilities/RunnerVisibility/RunnerAOIGizmos.cs using Guid(a09b7c3c2f0604fef93beb7057001dbb) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '596b8881c43c5511bdb0dc2104813a5d') in 0.004567 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Photon/Fusion/Runtime/Utilities/RunnerVisibility/RunnerLagCompensationGizmos.cs
+  artifactKey: Guid(7551cd937fd7ae84eb38a9dbbcd67c6f) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/Fusion/Runtime/Utilities/RunnerVisibility/RunnerLagCompensationGizmos.cs using Guid(7551cd937fd7ae84eb38a9dbbcd67c6f) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: 'abad790136a92c5b26a09833cefa0f01') in 0.004394 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Photon/Fusion/Plugins/NanoSockets/Android/x86_64/libnanosockets.so
+  artifactKey: Guid(4017079a9c0c04b488db2e8be8555bd9) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/Fusion/Plugins/NanoSockets/Android/x86_64/libnanosockets.so using Guid(4017079a9c0c04b488db2e8be8555bd9) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: 'ba9acaa432c06f081b0f22660faae43a') in 0.006628 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Photon/Fusion/Plugins/NanoSockets/Metro/x64/libnanosockets.dll
+  artifactKey: Guid(694d9b6f5f80c3849baef2972f2de1d7) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/Fusion/Plugins/NanoSockets/Metro/x64/libnanosockets.dll using Guid(694d9b6f5f80c3849baef2972f2de1d7) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: 'c864bd3dd5695ab933c0251c7d0ec373') in 0.005243 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Photon/Fusion/Runtime/Utilities/RunnerVisibility/RunnerVisibilityLinksRoot.cs
+  artifactKey: Guid(c370cac09f73d42fab172498cc96e499) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/Fusion/Runtime/Utilities/RunnerVisibility/RunnerVisibilityLinksRoot.cs using Guid(c370cac09f73d42fab172498cc96e499) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '0f7bf551d9413febea78ec0b87657fb6') in 0.004111 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: The I/O operation has been aborted because of either a thread exit or an application request.
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
