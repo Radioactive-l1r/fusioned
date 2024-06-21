@@ -48,7 +48,7 @@ public class BasicSpawner : MonoBehaviour, INetworkRunnerCallbacks
         await _runner.StartGame(new StartGameArgs()
         {
             GameMode = mode,
-            SessionName = "TestRoom",
+            SessionName = "gemhunter",
             Scene = scene,
             SceneManager = gameObject.AddComponent<NetworkSceneManagerDefault>()
         });
@@ -99,6 +99,24 @@ public class BasicSpawner : MonoBehaviour, INetworkRunnerCallbacks
 
     public void OnInput(NetworkRunner runner, NetworkInput input)
     {
+        var data = new NetworkInputData();
+        data.buttons.Set(MyButtons.space, Input.GetKeyDown(KeyCode.Space));
+
+
+        if (Input.GetKey(KeyCode.W))
+            data.direction += Vector3.forward;
+
+        if (Input.GetKey(KeyCode.S))
+            data.direction += Vector3.back;
+
+        if (Input.GetKey(KeyCode.A))
+            data.direction += Vector3.left;
+
+        if (Input.GetKey(KeyCode.D))
+            data.direction += Vector3.right;
+
+
+        input.Set(data);
     }
 
     public void OnInputMissing(NetworkRunner runner, PlayerRef player, NetworkInput input)
@@ -118,7 +136,7 @@ public class BasicSpawner : MonoBehaviour, INetworkRunnerCallbacks
         if (runner.IsServer)
         {
             // Create a unique position for the player
-            Vector3 spawnPosition = new Vector3((player.RawEncoded % runner.Config.Simulation.PlayerCount) * 3, 1, 0);
+            Vector3 spawnPosition = new Vector3(player.PlayerId, 2, 0);
             NetworkObject networkPlayerObject = runner.Spawn(_playerPrefab, spawnPosition, Quaternion.identity, player);
             // Keep track of the player avatars for easy access
             _spawnedCharacters.Add(player, networkPlayerObject);
