@@ -136,13 +136,15 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1602}
+      Script: {instanceID: 1600}
     - Class: 114
-      Script: {instanceID: 2710}
+      Script: {instanceID: 2708}
     - Class: 114
-      Script: {instanceID: 2808}
+      Script: {instanceID: 2806}
     - Class: 114
-      Script: {instanceID: 2826}
+      Script: {instanceID: 2824}
+    - Class: 114
+      Script: {instanceID: 3008}
     - Class: 114
       Script: {instanceID: 3120}
     - Class: 114
@@ -154,41 +156,39 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 4102}
     - Class: 114
-      Script: {instanceID: 4950}
+      Script: {instanceID: 4952}
     - Class: 114
-      Script: {instanceID: 5000}
+      Script: {instanceID: 5002}
     - Class: 114
-      Script: {instanceID: 5276}
+      Script: {instanceID: 5278}
     - Class: 114
-      Script: {instanceID: 5320}
+      Script: {instanceID: 5322}
     - Class: 114
-      Script: {instanceID: 5626}
+      Script: {instanceID: 5482}
     - Class: 114
-      Script: {instanceID: 5752}
+      Script: {instanceID: 5630}
     - Class: 114
       Script: {instanceID: 5756}
     - Class: 114
-      Script: {instanceID: 5758}
+      Script: {instanceID: 5760}
     - Class: 114
-      Script: {instanceID: 6154}
+      Script: {instanceID: 5762}
     - Class: 114
-      Script: {instanceID: 6554}
+      Script: {instanceID: 6160}
     - Class: 114
-      Script: {instanceID: 6934}
+      Script: {instanceID: 6560}
     - Class: 114
-      Script: {instanceID: 7014}
+      Script: {instanceID: 6940}
     - Class: 114
-      Script: {instanceID: 7204}
+      Script: {instanceID: 7020}
     - Class: 114
-      Script: {instanceID: 7236}
+      Script: {instanceID: 7210}
     - Class: 114
-      Script: {instanceID: 7492}
+      Script: {instanceID: 7242}
     - Class: 114
-      Script: {instanceID: 7528}
+      Script: {instanceID: 7498}
     - Class: 114
-      Script: {instanceID: 8212}
-    - Class: 114
-      Script: {instanceID: 8216}
+      Script: {instanceID: 7534}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -436,6 +436,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnDropdownValueChangedMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: c292afd50b5f47e68b3d24629eb6a29e
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: Player
   - hash:
       serializedVersion: 2
       Hash: a1ac4c50e55874de16eee3db71aa9784
@@ -826,6 +832,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.State
     namespaceName: Unity.VisualScripting
     className: StateGraphAsset
+  - hash:
+      serializedVersion: 2
+      Hash: f96b624cfdb5f051ef0a97559f4d7851
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: BasicSpawner
   - hash:
       serializedVersion: 2
       Hash: 540882762544409cc4530e60db00e951
@@ -1258,18 +1270,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnSliderValueChangedMessageListener
-  - hash:
-      serializedVersion: 2
-      Hash: f96b624cfdb5f051ef0a97559f4d7851
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: BasicSpawner
-  - hash:
-      serializedVersion: 2
-      Hash: 3f2c0c8e7f511089c59e7c77ea775a5c
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: Player
   platform: 19
   scenePathNames:
   - Assets/Scenes/SampleScene.unity
