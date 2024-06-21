@@ -18,7 +18,7 @@ public class Player : NetworkBehaviour
         {
             spawnedProjectile = BasicSpawner.instance._host;
             Health = BasicSpawner.instance._playerName;
-            RPC_Configure(Health);
+            RPC_Configure(Health,BasicSpawner.instance._host,BasicSpawner.instance._color);
 
         }
     }
@@ -26,12 +26,14 @@ public class Player : NetworkBehaviour
 
     public override void Spawned()
     {
-
-
-        _changeDetector = GetChangeDetector(ChangeDetector.Source.SimulationState);
+      
+       if(isHost)
+        {
+           
+        }
 
     }
-    public override void Render()
+  /**  public override void Render()
     {
         foreach (var change in _changeDetector.DetectChanges(this))
         {
@@ -44,16 +46,27 @@ public class Player : NetworkBehaviour
             }
         }
     }
-
+  */
 
     [Networked] public string playerName { get; set; }
+    [Networked] public bool isHost { get; set; }
+
     [Networked] public Color playerColor { get; set; }
 
     [Rpc(RpcSources.InputAuthority, RpcTargets.StateAuthority)]
-    public void RPC_Configure(string name)
+    public void RPC_Configure(string name,bool ishost,Color col)
     {
         playerName = name;
-        
+        isHost = ishost;
+        playerColor=col;
+            red.material.color = playerColor;
+        if(isHost)
+        {
+            transform.GetChild(1).gameObject.SetActive(true);
+        }
+       
+
+
     }
     NetworkObject myObject;// Get the reference somehow
 
