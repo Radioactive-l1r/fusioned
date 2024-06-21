@@ -5,18 +5,36 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class BasicSpawner : MonoBehaviour, INetworkRunnerCallbacks
 {
+    public static BasicSpawner instance;
+
     private NetworkRunner _runner;
     [SerializeField] private NetworkPrefabRef _playerPrefab;
     private Dictionary<PlayerRef, NetworkObject> _spawnedCharacters = new Dictionary<PlayerRef, NetworkObject>();
 
-    async void StartGame(GameMode mode)
+    public string _playerName;
+    public Color _color;
+    public TMP_InputField nameInput;
+
+    public bool _host;
+
+     void Awake()
+    {
+        if(instance == null)
+        {
+            instance = this;
+        }
+    }
+
+    async void StartGame(GameMode mode, string PlayerName)
     {
         // Create the Fusion runner and let it know that we will be providing user input
         _runner = gameObject.AddComponent<NetworkRunner>();
         _runner.ProvideInput = true;
+        _playerName = PlayerName;
 
         // Create the NetworkSceneInfo from the current scene
         var scene = SceneRef.FromIndex(SceneManager.GetActiveScene().buildIndex);
@@ -39,13 +57,19 @@ public class BasicSpawner : MonoBehaviour, INetworkRunnerCallbacks
     {
         if (_runner == null)
         {
-            if (GUI.Button(new Rect(0, 0, 200, 40), "Host"))
+            _playerName = GUI.TextField(new Rect(0, 0, 200, 40), _playerName, 25);
+
+            if (GUI.Button(new Rect(0, 40, 200, 40), "Host"))
             {
-                StartGame(GameMode.Host);
+                _color = Color.green;
+                _host = true;
+                StartGame(GameMode.Host, _playerName);
             }
-            if (GUI.Button(new Rect(0, 40, 200, 40), "Join"))
+            if (GUI.Button(new Rect(0, 80, 200, 40), "Join"))
             {
-                StartGame(GameMode.Client);
+                _color = Color.red;
+                _host = false;
+                StartGame(GameMode.Client, _playerName);
             }
         }
     }
