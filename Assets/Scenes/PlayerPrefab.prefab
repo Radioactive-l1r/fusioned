@@ -116,6 +116,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c05768d3d305ab4ca7561d6a4f3cbbb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Camera: {fileID: 4064892086238019471, guid: 28d920bb7530d23438459998d34041fe, type: 3}
   _myname: 
   _myColor: {r: 0, g: 0, b: 0, a: 0}
   gems: {fileID: 1465361808555063802, guid: 0575727ee3d1a2147ad3fccde9df44e9, type: 3}
@@ -279,8 +280,8 @@ Transform:
   m_GameObject: {fileID: 7199790545323824433}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.751, z: 0}
-  m_LocalScale: {x: 1, y: 0.34, z: 1}
+  m_LocalPosition: {x: 0, y: 0.416, z: 0.375}
+  m_LocalScale: {x: 0.7375, y: 0.34, z: 0.6375}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7647959893694823859}

@@ -2,8 +2,9 @@
   "ExpandedNodes": [
     "",
     "\\Assets",
-    "\\Assets\\Scenes"
+    "\\Assets\\Scenes",
+    "\\Assets\\tps"
   ],
-  "SelectedNode": "\\Assets\\Scenes\\followPlayer.cs",
+  "SelectedNode": "\\Assets\\Scenes\\Player.cs",
   "PreviewInSolutionExplorer": false
 }

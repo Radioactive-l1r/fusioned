@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class Player : NetworkBehaviour
 {
+    public Camera Camera;
 
     [Networked]
     public string myname { get; set; }
@@ -23,10 +24,29 @@ public class Player : NetworkBehaviour
     {
         if (GetInput(out NetworkInputData data))
         {
-            data.direction.Normalize();
-            _cc.Move(5 * data.direction * Runner.DeltaTime);
+           
+            if (data.direction.magnitude >= 0.1f)
+            {
+                // Calculate movement direction relative to camera
+                Vector3 camForward = Camera.transform.forward;
+                Vector3 camRight = Camera.transform.right;
 
-            if(data.buttons.IsSet(MyButtons.space) && HasStateAuthority)
+                camForward.y = 0;
+                camRight.y = 0;
+                camForward = camForward.normalized;
+                camRight = camRight.normalized;
+
+                Vector3 moveDirection = camForward * data.direction.z + camRight * data.direction.x;
+
+                // Rotate towards movement direction
+                Quaternion targetRotation = Quaternion.LookRotation(moveDirection);
+                transform.rotation = Quaternion.Lerp(transform.rotation, targetRotation, 10f * Time.deltaTime);
+
+                // Move the character
+                _cc.Move(moveDirection * 5f * Time.deltaTime);
+            }
+
+            if (data.buttons.IsSet(MyButtons.space) && HasStateAuthority)
             {
                 spawnGems();
             }    
@@ -39,15 +59,22 @@ public class Player : NetworkBehaviour
 
             RPC_SendMessage(BasicSpawner.instance._playerName, BasicSpawner.instance._host,BasicSpawner.instance._color);
 
-            Camera.main.GetComponent<followPlayer>().player = this.transform;
+            // Camera.main.GetComponent<followPlayer>().player = this.transform;
 
         }
-        if(this.HasInputAuthority && Input.GetKeyDown(KeyCode.Space))
+        if (this.HasInputAuthority && Input.GetKeyDown(KeyCode.Space))
         {
          
         }
+        if (HasStateAuthority)
+        {
+          //  Camera = Camera.main;
+           // Camera.GetComponent<ThirdPersonCamera>().target = transform;
+        }
 
-      
+        Camera = Instantiate(Camera);
+        Camera.GetComponent<ThirdPersonCamera>().target = transform;
+
     }
 
 
