@@ -101,9 +101,21 @@ public class BasicSpawner : MonoBehaviour, INetworkRunnerCallbacks
     {
         var data = new NetworkInputData();
         data.buttons.Set(MyButtons.space, Input.GetKeyDown(KeyCode.Space));
+        data.buttons.Set(MyButtons.jump, Input.GetKey(KeyCode.Z));
+        data.mouseX = Input.GetAxis("Mouse X");
+        data.mouseY =Input.GetAxis("Mouse Y");
+         data.direction= new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
+    /**   if (Input.GetKey(KeyCode.W))
+            data.direction += Vector3.forward;
 
-        data.direction= new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical")).normalized;
+        if (Input.GetKey(KeyCode.S))
+            data.direction += Vector3.back;
 
+        if (Input.GetKey(KeyCode.A))
+            data.direction += Vector3.left;
+
+        if (Input.GetKey(KeyCode.D))
+            data.direction += Vector3.right;*/
         input.Set(data);
     }
 

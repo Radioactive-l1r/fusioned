@@ -1,0 +1,11 @@
+D:\unity\fusioned\Temp\bin\Debug\Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.dll
+D:\unity\fusioned\Temp\bin\Debug\Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.pdb
+D:\unity\fusioned\Temp\bin\Debug\UnityEditor.UI.pdb
+D:\unity\fusioned\Temp\bin\Debug\UnityEngine.UI.pdb
+D:\unity\fusioned\Temp\bin\Debug\UnityEditor.TestRunner.pdb
+D:\unity\fusioned\Temp\bin\Debug\UnityEngine.TestRunner.pdb
+D:\unity\fusioned\obj\Debug\Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.csproj.AssemblyReference.cache
+D:\unity\fusioned\obj\Debug\Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.csproj.CoreCompileInputs.cache
+D:\unity\fusioned\obj\Debug\Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.csproj.CopyComplete
+D:\unity\fusioned\obj\Debug\Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.dll
+D:\unity\fusioned\obj\Debug\Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.pdb

@@ -1,0 +1,9 @@
+D:\unity\fusioned\Temp\bin\Debug\Unity.Timeline.dll
+D:\unity\fusioned\Temp\bin\Debug\Unity.Timeline.pdb
+D:\unity\fusioned\Temp\bin\Debug\UnityEditor.UI.pdb
+D:\unity\fusioned\Temp\bin\Debug\UnityEngine.UI.pdb
+D:\unity\fusioned\obj\Debug\Unity.Timeline.csproj.AssemblyReference.cache
+D:\unity\fusioned\obj\Debug\Unity.Timeline.csproj.CoreCompileInputs.cache
+D:\unity\fusioned\obj\Debug\Unity.Timeline.csproj.CopyComplete
+D:\unity\fusioned\obj\Debug\Unity.Timeline.dll
+D:\unity\fusioned\obj\Debug\Unity.Timeline.pdb

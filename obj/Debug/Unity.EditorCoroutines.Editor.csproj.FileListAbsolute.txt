@@ -1,0 +1,11 @@
+D:\unity\fusioned\Temp\bin\Debug\Unity.EditorCoroutines.Editor.dll
+D:\unity\fusioned\Temp\bin\Debug\Unity.EditorCoroutines.Editor.pdb
+D:\unity\fusioned\Temp\bin\Debug\UnityEditor.UI.pdb
+D:\unity\fusioned\Temp\bin\Debug\UnityEngine.UI.pdb
+D:\unity\fusioned\Temp\bin\Debug\UnityEditor.TestRunner.pdb
+D:\unity\fusioned\Temp\bin\Debug\UnityEngine.TestRunner.pdb
+D:\unity\fusioned\obj\Debug\Unity.EditorCoroutines.Editor.csproj.AssemblyReference.cache
+D:\unity\fusioned\obj\Debug\Unity.EditorCoroutines.Editor.csproj.CoreCompileInputs.cache
+D:\unity\fusioned\obj\Debug\Unity.EditorCoroutines.Editor.csproj.CopyComplete
+D:\unity\fusioned\obj\Debug\Unity.EditorCoroutines.Editor.dll
+D:\unity\fusioned\obj\Debug\Unity.EditorCoroutines.Editor.pdb

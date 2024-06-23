@@ -5,7 +5,8 @@ using UnityEngine;
 
 public class Player : NetworkBehaviour
 {
-    public Camera Camera;
+
+  public  Camera mycamera;
 
     [Networked]
     public string myname { get; set; }
@@ -13,39 +14,61 @@ public class Player : NetworkBehaviour
 
 
     public Color myColor { get; set; }
-    private NetworkCharacterController _cc;
+    private CharacterController _cc;
     public NetworkObject gems;
+
+    public Transform target;  // The target object to follow
+    public Transform holder;
+    public float distance = 5.0f;  // Distance from the target
+    public float height = 3.0f;    // Height from the target
+    public float rotationSpeed = 50f;  // Speed of camera rotation
+    public Vector3 offset;  // Additional offset from the target
+
+    private float currentRotationAngle = 0.0f;
+    private float currentHeight = 0.0f;
+    public float moveSpeed = 5f;
+    private Vector3 moveDirection = Vector3.zero;
 
     private void Awake()
     {
-        _cc = GetComponent<NetworkCharacterController>();
+        _cc = GetComponent<CharacterController>();
     }
     public override void FixedUpdateNetwork()
     {
         if (GetInput(out NetworkInputData data))
         {
+
+
+          
+
+          
            
-            if (data.direction.magnitude >= 0.1f)
+
+            float mouseX = data.mouseX;
+            transform.Rotate(0, mouseX, 0);
+
+            if (_cc.isGrounded)
             {
-                // Calculate movement direction relative to camera
-                Vector3 camForward = Camera.transform.forward;
-                Vector3 camRight = Camera.transform.right;
+                float moveDirectionY = moveDirection.y;
+                moveDirection =data.direction;
+                moveDirection = transform.TransformDirection(moveDirection);
+                moveDirection *= moveSpeed;
 
-                camForward.y = 0;
-                camRight.y = 0;
-                camForward = camForward.normalized;
-                camRight = camRight.normalized;
-
-                Vector3 moveDirection = camForward * data.direction.z + camRight * data.direction.x;
-
-                // Rotate towards movement direction
-                Quaternion targetRotation = Quaternion.LookRotation(moveDirection);
-                transform.rotation = Quaternion.Lerp(transform.rotation, targetRotation, 10f * Time.deltaTime);
-
-                // Move the character
-                _cc.Move(moveDirection * 5f * Time.deltaTime);
+                if (data.buttons.IsSet(MyButtons.jump))
+                {
+                    moveDirection.y = 8;
+                }
+                else
+                {
+                    moveDirection.y = moveDirectionY;
+                }
             }
 
+            // Apply gravity
+            moveDirection.y -= 20 * Time.deltaTime;
+
+            // Move the controller
+            _cc.Move(moveDirection * Time.deltaTime);
             if (data.buttons.IsSet(MyButtons.space) && HasStateAuthority)
             {
                 spawnGems();
@@ -59,22 +82,24 @@ public class Player : NetworkBehaviour
 
             RPC_SendMessage(BasicSpawner.instance._playerName, BasicSpawner.instance._host,BasicSpawner.instance._color);
 
+        }
+        if (Object.HasInputAuthority)
+        {
+
+          
+            holder.name = "CamHolder";
             // Camera.main.GetComponent<followPlayer>().player = this.transform;
+            Camera.main.gameObject.SetActive(false);
+
 
         }
-        if (this.HasInputAuthority && Input.GetKeyDown(KeyCode.Space))
+        else
         {
-         
-        }
-        if (HasStateAuthority)
-        {
-          //  Camera = Camera.main;
-           // Camera.GetComponent<ThirdPersonCamera>().target = transform;
+            Camera localCamera = GetComponentInChildren<Camera>();
+            localCamera.enabled = false;
         }
 
-        Camera = Instantiate(Camera);
-        Camera.GetComponent<ThirdPersonCamera>().target = transform;
-
+        holder.parent = null;
     }
 
 
@@ -92,14 +117,9 @@ public class Player : NetworkBehaviour
     {
         myname = name;
         myColor = playerColor;
-        Invoke("SetPlayerName", 1f);
     }
 
-    private void SetPlayerName()
-    {
-      
-      
-    }
+  
     private void Update()
     {
         this.gameObject.name = myname;

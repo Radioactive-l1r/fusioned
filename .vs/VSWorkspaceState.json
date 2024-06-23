@@ -2,9 +2,10 @@
   "ExpandedNodes": [
     "",
     "\\Assets",
-    "\\Assets\\Scenes",
-    "\\Assets\\tps"
+    "\\Assets\\Final",
+    "\\Assets\\Final\\scripts",
+    "\\Assets\\Scenes"
   ],
-  "SelectedNode": "\\Assets\\Scenes\\Player.cs",
+  "SelectedNode": "\\Assets\\Scenes\\BasicSpawner.cs",
   "PreviewInSolutionExplorer": false
 }

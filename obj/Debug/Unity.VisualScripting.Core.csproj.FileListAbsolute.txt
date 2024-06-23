@@ -1,0 +1,9 @@
+D:\unity\fusioned\Temp\bin\Debug\Unity.VisualScripting.Core.dll
+D:\unity\fusioned\Temp\bin\Debug\Unity.VisualScripting.Core.pdb
+D:\unity\fusioned\Temp\bin\Debug\UnityEditor.UI.pdb
+D:\unity\fusioned\Temp\bin\Debug\UnityEngine.UI.pdb
+D:\unity\fusioned\obj\Debug\Unity.VisualScripting.Core.csproj.AssemblyReference.cache
+D:\unity\fusioned\obj\Debug\Unity.VisualScripting.Core.csproj.CoreCompileInputs.cache
+D:\unity\fusioned\obj\Debug\Unity.VisualScripting.Core.csproj.CopyComplete
+D:\unity\fusioned\obj\Debug\Unity.VisualScripting.Core.dll
+D:\unity\fusioned\obj\Debug\Unity.VisualScripting.Core.pdb

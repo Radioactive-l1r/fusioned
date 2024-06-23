@@ -1,0 +1,9 @@
+D:\unity\fusioned\Temp\bin\Debug\Unity.TextMeshPro.dll
+D:\unity\fusioned\Temp\bin\Debug\Unity.TextMeshPro.pdb
+D:\unity\fusioned\Temp\bin\Debug\UnityEditor.UI.pdb
+D:\unity\fusioned\Temp\bin\Debug\UnityEngine.UI.pdb
+D:\unity\fusioned\obj\Debug\Unity.TextMeshPro.csproj.AssemblyReference.cache
+D:\unity\fusioned\obj\Debug\Unity.TextMeshPro.csproj.CoreCompileInputs.cache
+D:\unity\fusioned\obj\Debug\Unity.TextMeshPro.csproj.CopyComplete
+D:\unity\fusioned\obj\Debug\Unity.TextMeshPro.dll
+D:\unity\fusioned\obj\Debug\Unity.TextMeshPro.pdb

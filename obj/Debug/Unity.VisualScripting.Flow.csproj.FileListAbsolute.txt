@@ -1,0 +1,10 @@
+D:\unity\fusioned\Temp\bin\Debug\Unity.VisualScripting.Flow.dll
+D:\unity\fusioned\Temp\bin\Debug\Unity.VisualScripting.Flow.pdb
+D:\unity\fusioned\Temp\bin\Debug\Unity.VisualScripting.Core.pdb
+D:\unity\fusioned\Temp\bin\Debug\UnityEditor.UI.pdb
+D:\unity\fusioned\Temp\bin\Debug\UnityEngine.UI.pdb
+D:\unity\fusioned\obj\Debug\Unity.VisualScripting.Flow.csproj.AssemblyReference.cache
+D:\unity\fusioned\obj\Debug\Unity.VisualScripting.Flow.csproj.CoreCompileInputs.cache
+D:\unity\fusioned\obj\Debug\Unity.VisualScripting.Flow.csproj.CopyComplete
+D:\unity\fusioned\obj\Debug\Unity.VisualScripting.Flow.dll
+D:\unity\fusioned\obj\Debug\Unity.VisualScripting.Flow.pdb

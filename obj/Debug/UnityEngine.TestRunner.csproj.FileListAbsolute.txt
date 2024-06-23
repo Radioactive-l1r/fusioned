@@ -1,0 +1,6 @@
+D:\unity\fusioned\Temp\bin\Debug\UnityEngine.TestRunner.dll
+D:\unity\fusioned\Temp\bin\Debug\UnityEngine.TestRunner.pdb
+D:\unity\fusioned\obj\Debug\UnityEngine.TestRunner.csproj.AssemblyReference.cache
+D:\unity\fusioned\obj\Debug\UnityEngine.TestRunner.csproj.CoreCompileInputs.cache
+D:\unity\fusioned\obj\Debug\UnityEngine.TestRunner.dll
+D:\unity\fusioned\obj\Debug\UnityEngine.TestRunner.pdb

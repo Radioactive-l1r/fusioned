@@ -1,0 +1,6 @@
+D:\unity\fusioned\Temp\bin\Debug\UnityEngine.UI.dll
+D:\unity\fusioned\Temp\bin\Debug\UnityEngine.UI.pdb
+D:\unity\fusioned\obj\Debug\UnityEngine.UI.csproj.AssemblyReference.cache
+D:\unity\fusioned\obj\Debug\UnityEngine.UI.csproj.CoreCompileInputs.cache
+D:\unity\fusioned\obj\Debug\UnityEngine.UI.dll
+D:\unity\fusioned\obj\Debug\UnityEngine.UI.pdb
