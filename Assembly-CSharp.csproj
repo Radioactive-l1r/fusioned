@@ -70,6 +70,7 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\DropdownSample.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexColorCycler.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\EnvMapAnimator.cs" />
+    <Compile Include="Assets\Final\scripts\gemSpawner.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_A.cs" />
     <Compile Include="Assets\Final\scripts\Spawner.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
@@ -104,6 +105,7 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark03.cs" />
     <Compile Include="Assets\Scenes\followPlayer.cs" />
     <Compile Include="Assets\Scenes\NetworkInputData.cs" />
+    <Compile Include="Assets\tps\tpsController.cs" />
     <Compile Include="Assets\Scenes\playerData.cs" />
     <Compile Include="Assets\Scenes\followCamHolder.cs" />
     <Compile Include="Assets\Final\scripts\playerController.cs" />
@@ -1042,6 +1044,10 @@
       <Project>{7870FBEA-2056-0ECC-8CBC-4E5B2DC78FAC}</Project>
       <Name>Unity.EditorCoroutines.Editor</Name>
     </ProjectReference>
+    <ProjectReference Include="com.unity.cinemachine.editor.csproj">
+      <Project>{449560D1-A96C-0583-1732-AAA6268A85EA}</Project>
+      <Name>com.unity.cinemachine.editor</Name>
+    </ProjectReference>
     <ProjectReference Include="Unity.Postprocessing.Runtime.csproj">
       <Project>{3D6332CF-F7CF-F4A1-2EF7-A40126FDCF61}</Project>
       <Name>Unity.Postprocessing.Runtime</Name>
@@ -1145,6 +1151,10 @@
     <ProjectReference Include="Unity.VSCode.Editor.csproj">
       <Project>{816E7EBD-31C7-C85E-2E2A-69B49A65323A}</Project>
       <Name>Unity.VSCode.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Cinemachine.csproj">
+      <Project>{D1D29878-65C6-C88A-C1EF-9FDDE0074E3C}</Project>
+      <Name>Cinemachine</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

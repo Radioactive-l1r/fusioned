@@ -4,7 +4,9 @@ using UnityEngine.EventSystems;
 using UnityEngine.UI;
 public class AudioManager : MonoBehaviour
 {
-   
+    public static AudioManager instance;
+
+
     private Dictionary<string, AudioClip> audioClips = new Dictionary<string, AudioClip>();
 
    
@@ -13,6 +15,10 @@ public class AudioManager : MonoBehaviour
    
     void Awake()
     {
+        if (instance == null)
+        {
+            instance = this;
+        }
         audioSource = GetComponent<AudioSource>();
         LoadAudioClips();
 

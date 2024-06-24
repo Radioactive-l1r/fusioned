@@ -21,7 +21,7 @@ public class Spawner : MonoBehaviour, INetworkRunnerCallbacks
     public string _room_name;
     public string _type;
     //------
-
+    public GameObject loadingUi;
     void Awake()
     {
         if (instance == null)
@@ -44,7 +44,7 @@ public class Spawner : MonoBehaviour, INetworkRunnerCallbacks
         {
             StartGame(GameMode.Client, _name);
         }
-        
+        loadingUi.SetActive(true);
     }
 
     async void StartGame(GameMode mode, string PlayerName)
@@ -119,10 +119,16 @@ public class Spawner : MonoBehaviour, INetworkRunnerCallbacks
 
     public void OnPlayerJoined(NetworkRunner runner, PlayerRef player)
     {
+        loadingUi.SetActive(false);
+
         if (runner.IsServer)
         {
             // Create a unique position for the player
-            Vector3 spawnPosition = new Vector3(-50, -10, player.PlayerId+2);
+            // Vector3 spawnPosition = new Vector3(-50, -10, player.PlayerId+2);
+            //            Vector3 spawnPosition = new Vector3(player.PlayerId, 2, 0);
+
+            Vector3 spawnPosition = new Vector3(-50, -10, (player.RawEncoded % runner.Config.Simulation.PlayerCount) * 3);
+
             NetworkObject networkPlayerObject = runner.Spawn(_playerPrefab, spawnPosition, Quaternion.identity, player);
             // Keep track of the player avatars for easy access
             _spawnedCharacters.Add(player, networkPlayerObject);

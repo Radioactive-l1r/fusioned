@@ -310,6 +310,7 @@
 -r:"D:/eng/gameengines/editors/2022.3.20f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.WindModule.dll"
 -r:"D:/eng/gameengines/editors/2022.3.20f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.XRModule.dll"
 -r:"Library/PackageCache/com.unity.visualscripting@1.9.4/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll"
+-r:"Library/Bee/artifacts/1900b0aP.dag/Cinemachine.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aP.dag/Fusion.Unity.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aP.dag/Unity.Postprocessing.Runtime.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aP.dag/Unity.TextMeshPro.ref.dll"
@@ -321,6 +322,7 @@
 -analyzer:"D:/eng/gameengines/editors/2022.3.20f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll"
 -analyzer:"D:/eng/gameengines/editors/2022.3.20f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 "Assets/Final/scripts/AudioManager.cs"
+"Assets/Final/scripts/gemSpawner.cs"
 "Assets/Final/scripts/menu.cs"
 "Assets/Final/scripts/playerController.cs"
 "Assets/Final/scripts/Spawner.cs"
@@ -369,6 +371,7 @@
 "Assets/tps/FirstPersonControlelr.cs"
 "Assets/tps/ThirdPersonCamera.cs"
 "Assets/tps/tps.cs"
+"Assets/tps/tpsController.cs"
 -langversion:9.0
 /unsafe+
 /deterministic

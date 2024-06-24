@@ -163,7 +163,8 @@
         155,
         156,
         157,
-        158
+        158,
+        159
       ],
       "OverwriteOutputs": false,
       "DebugActionIndex": 0
@@ -413,7 +414,7 @@
       "DisplayName": "Writing boot.config_tyr4.info",
       "ActionType": "WriteFile",
       "PayloadOffset": 83,
-      "PayloadLength": 15937,
+      "PayloadLength": 16008,
       "PayloadDebugContentSnippet": "{\"System.Object\":null,\"Bee.Tun",
       "Inputs": [],
       "Outputs": [
@@ -525,6 +526,7 @@
         "D:/unity/fusioned/Library/Bee/PlayerScriptAssemblies/Fusion.Unity.dll",
         "D:/unity/fusioned/Library/Bee/PlayerScriptAssemblies/Unity.TextMeshPro.dll",
         "D:/unity/fusioned/Library/Bee/PlayerScriptAssemblies/Unity.VisualScripting.State.dll",
+        "D:/unity/fusioned/Library/Bee/PlayerScriptAssemblies/Cinemachine.dll",
         "D:/unity/fusioned/Assets/Photon/PhotonLibs/WebSocket/websocket-sharp.dll",
         "D:/unity/fusioned/Assets/Photon/Fusion/Assemblies/Fusion.Common.dll",
         "D:/unity/fusioned/Assets/Photon/Fusion/Plugins/NanoSockets/NanoSockets/Dynamic/NanoSockets.dll",
@@ -1555,6 +1557,18 @@
       "DebugActionIndex": 101
     },
     {
+      "Annotation": "CopyFiles D:/unity/fusionedtest/Fus_Data/Managed/Cinemachine.dll",
+      "DisplayName": "Copying Cinemachine.dll",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "D:/unity/fusioned/Library/Bee/PlayerScriptAssemblies/Cinemachine.dll"
+      ],
+      "Outputs": [
+        "D:/unity/fusionedtest/Fus_Data/Managed/Cinemachine.dll"
+      ],
+      "DebugActionIndex": 102
+    },
+    {
       "Annotation": "CopyFiles D:/unity/fusionedtest/Fus_Data/Managed/websocket-sharp.dll",
       "DisplayName": "Copying websocket-sharp.dll",
       "ActionType": "CopyFiles",
@@ -1564,7 +1578,7 @@
       "Outputs": [
         "D:/unity/fusionedtest/Fus_Data/Managed/websocket-sharp.dll"
       ],
-      "DebugActionIndex": 102
+      "DebugActionIndex": 103
     },
     {
       "Annotation": "CopyFiles D:/unity/fusionedtest/Fus_Data/Managed/Fusion.Common.dll",
@@ -1576,7 +1590,7 @@
       "Outputs": [
         "D:/unity/fusionedtest/Fus_Data/Managed/Fusion.Common.dll"
       ],
-      "DebugActionIndex": 103
+      "DebugActionIndex": 104
     },
     {
       "Annotation": "CopyFiles D:/unity/fusionedtest/Fus_Data/Managed/NanoSockets.dll",
@@ -1588,7 +1602,7 @@
       "Outputs": [
         "D:/unity/fusionedtest/Fus_Data/Managed/NanoSockets.dll"
       ],
-      "DebugActionIndex": 104
+      "DebugActionIndex": 105
     },
     {
       "Annotation": "CopyFiles D:/unity/fusionedtest/Fus_Data/Managed/Fusion.Sockets.dll",
@@ -1600,7 +1614,7 @@
       "Outputs": [
         "D:/unity/fusionedtest/Fus_Data/Managed/Fusion.Sockets.dll"
       ],
-      "DebugActionIndex": 105
+      "DebugActionIndex": 106
     },
     {
       "Annotation": "CopyFiles D:/unity/fusionedtest/Fus_Data/Managed/Fusion.Runtime.dll",
@@ -1612,7 +1626,7 @@
       "Outputs": [
         "D:/unity/fusionedtest/Fus_Data/Managed/Fusion.Runtime.dll"
       ],
-      "DebugActionIndex": 106
+      "DebugActionIndex": 107
     },
     {
       "Annotation": "CopyFiles D:/unity/fusionedtest/Fus_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll",
@@ -1624,7 +1638,7 @@
       "Outputs": [
         "D:/unity/fusionedtest/Fus_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll"
       ],
-      "DebugActionIndex": 107
+      "DebugActionIndex": 108
     },
     {
       "Annotation": "CopyFiles D:/unity/fusionedtest/Fus_Data/Managed/Photon3Unity3D.dll",
@@ -1636,7 +1650,7 @@
       "Outputs": [
         "D:/unity/fusionedtest/Fus_Data/Managed/Photon3Unity3D.dll"
       ],
-      "DebugActionIndex": 108
+      "DebugActionIndex": 109
     },
     {
       "Annotation": "CopyFiles D:/unity/fusionedtest/Fus_Data/Managed/Fusion.Realtime.dll",
@@ -1648,7 +1662,7 @@
       "Outputs": [
         "D:/unity/fusionedtest/Fus_Data/Managed/Fusion.Realtime.dll"
       ],
-      "DebugActionIndex": 109
+      "DebugActionIndex": 110
     },
     {
       "Annotation": "CopyFiles D:/unity/fusionedtest/Fus_Data/Managed/Fusion.Log.dll",
@@ -1660,7 +1674,7 @@
       "Outputs": [
         "D:/unity/fusionedtest/Fus_Data/Managed/Fusion.Log.dll"
       ],
-      "DebugActionIndex": 110
+      "DebugActionIndex": 111
     },
     {
       "Annotation": "CopyFiles D:/unity/fusionedtest/Fus_Data/Managed/netstandard.dll",
@@ -1672,7 +1686,7 @@
       "Outputs": [
         "D:/unity/fusionedtest/Fus_Data/Managed/netstandard.dll"
       ],
-      "DebugActionIndex": 111
+      "DebugActionIndex": 112
     },
     {
       "Annotation": "CopyFiles D:/unity/fusionedtest/Fus_Data/Managed/Mono.Security.dll",
@@ -1684,7 +1698,7 @@
       "Outputs": [
         "D:/unity/fusionedtest/Fus_Data/Managed/Mono.Security.dll"
       ],
-      "DebugActionIndex": 112
+      "DebugActionIndex": 113
     },
     {
       "Annotation": "CopyFiles D:/unity/fusionedtest/Fus_Data/Managed/System.ComponentModel.Composition.dll",
@@ -1696,7 +1710,7 @@
       "Outputs": [
         "D:/unity/fusionedtest/Fus_Data/Managed/System.ComponentModel.Composition.dll"
       ],
-      "DebugActionIndex": 113
+      "DebugActionIndex": 114
     },
     {
       "Annotation": "CopyFiles D:/unity/fusionedtest/Fus_Data/Managed/System.Configuration.dll",
@@ -1708,7 +1722,7 @@
       "Outputs": [
         "D:/unity/fusionedtest/Fus_Data/Managed/System.Configuration.dll"
       ],
-      "DebugActionIndex": 114
+      "DebugActionIndex": 115
     },
     {
       "Annotation": "CopyFiles D:/unity/fusionedtest/Fus_Data/Managed/System.Core.dll",
@@ -1720,7 +1734,7 @@
       "Outputs": [
         "D:/unity/fusionedtest/Fus_Data/Managed/System.Core.dll"
       ],
-      "DebugActionIndex": 115
+      "DebugActionIndex": 116
     },
     {
       "Annotation": "CopyFiles D:/unity/fusionedtest/Fus_Data/Managed/System.Data.DataSetExtensions.dll",
@@ -1732,7 +1746,7 @@
       "Outputs": [
         "D:/unity/fusionedtest/Fus_Data/Managed/System.Data.DataSetExtensions.dll"
       ],
-      "DebugActionIndex": 116
+      "DebugActionIndex": 117
     },
     {
       "Annotation": "CopyFiles D:/unity/fusionedtest/Fus_Data/Managed/System.Data.dll",
@@ -1744,7 +1758,7 @@
       "Outputs": [
         "D:/unity/fusionedtest/Fus_Data/Managed/System.Data.dll"
       ],
-      "DebugActionIndex": 117
+      "DebugActionIndex": 118
     },
     {
       "Annotation": "CopyFiles D:/unity/fusionedtest/Fus_Data/Managed/System.Drawing.dll",
@@ -1756,7 +1770,7 @@
       "Outputs": [
         "D:/unity/fusionedtest/Fus_Data/Managed/System.Drawing.dll"
       ],
-      "DebugActionIndex": 118
+      "DebugActionIndex": 119
     },
     {
       "Annotation": "CopyFiles D:/unity/fusionedtest/Fus_Data/Managed/System.EnterpriseServices.dll",
@@ -1768,7 +1782,7 @@
       "Outputs": [
         "D:/unity/fusionedtest/Fus_Data/Managed/System.EnterpriseServices.dll"
       ],
-      "DebugActionIndex": 119
+      "DebugActionIndex": 120
     },
     {
       "Annotation": "CopyFiles D:/unity/fusionedtest/Fus_Data/Managed/System.IO.Compression.FileSystem.dll",
@@ -1780,7 +1794,7 @@
       "Outputs": [
         "D:/unity/fusionedtest/Fus_Data/Managed/System.IO.Compression.FileSystem.dll"
       ],
-      "DebugActionIndex": 120
+      "DebugActionIndex": 121
     },
     {
       "Annotation": "CopyFiles D:/unity/fusionedtest/Fus_Data/Managed/System.IO.Compression.dll",
@@ -1792,7 +1806,7 @@
       "Outputs": [
         "D:/unity/fusionedtest/Fus_Data/Managed/System.IO.Compression.dll"
       ],
-      "DebugActionIndex": 121
+      "DebugActionIndex": 122
     },
     {
       "Annotation": "CopyFiles D:/unity/fusionedtest/Fus_Data/Managed/System.Net.Http.dll",
@@ -1804,7 +1818,7 @@
       "Outputs": [
         "D:/unity/fusionedtest/Fus_Data/Managed/System.Net.Http.dll"
       ],
-      "DebugActionIndex": 122
+      "DebugActionIndex": 123
     },
     {
       "Annotation": "CopyFiles D:/unity/fusionedtest/Fus_Data/Managed/System.Numerics.dll",
@@ -1816,7 +1830,7 @@
       "Outputs": [
         "D:/unity/fusionedtest/Fus_Data/Managed/System.Numerics.dll"
       ],
-      "DebugActionIndex": 123
+      "DebugActionIndex": 124
     },
     {
       "Annotation": "CopyFiles D:/unity/fusionedtest/Fus_Data/Managed/System.Runtime.Serialization.dll",
@@ -1828,7 +1842,7 @@
       "Outputs": [
         "D:/unity/fusionedtest/Fus_Data/Managed/System.Runtime.Serialization.dll"
       ],
-      "DebugActionIndex": 124
+      "DebugActionIndex": 125
     },
     {
       "Annotation": "CopyFiles D:/unity/fusionedtest/Fus_Data/Managed/System.Security.dll",
@@ -1840,7 +1854,7 @@
       "Outputs": [
         "D:/unity/fusionedtest/Fus_Data/Managed/System.Security.dll"
       ],
-      "DebugActionIndex": 125
+      "DebugActionIndex": 126
     },
     {
       "Annotation": "CopyFiles D:/unity/fusionedtest/Fus_Data/Managed/System.ServiceModel.Internals.dll",
@@ -1852,7 +1866,7 @@
       "Outputs": [
         "D:/unity/fusionedtest/Fus_Data/Managed/System.ServiceModel.Internals.dll"
       ],
-      "DebugActionIndex": 126
+      "DebugActionIndex": 127
     },
     {
       "Annotation": "CopyFiles D:/unity/fusionedtest/Fus_Data/Managed/System.Transactions.dll",
@@ -1864,7 +1878,7 @@
       "Outputs": [
         "D:/unity/fusionedtest/Fus_Data/Managed/System.Transactions.dll"
       ],
-      "DebugActionIndex": 127
+      "DebugActionIndex": 128
     },
     {
       "Annotation": "CopyFiles D:/unity/fusionedtest/Fus_Data/Managed/System.Xml.Linq.dll",
@@ -1876,7 +1890,7 @@
       "Outputs": [
         "D:/unity/fusionedtest/Fus_Data/Managed/System.Xml.Linq.dll"
       ],
-      "DebugActionIndex": 128
+      "DebugActionIndex": 129
     },
     {
       "Annotation": "CopyFiles D:/unity/fusionedtest/Fus_Data/Managed/System.Xml.dll",
@@ -1888,7 +1902,7 @@
       "Outputs": [
         "D:/unity/fusionedtest/Fus_Data/Managed/System.Xml.dll"
       ],
-      "DebugActionIndex": 129
+      "DebugActionIndex": 130
     },
     {
       "Annotation": "CopyFiles D:/unity/fusionedtest/Fus_Data/Managed/System.dll",
@@ -1900,7 +1914,7 @@
       "Outputs": [
         "D:/unity/fusionedtest/Fus_Data/Managed/System.dll"
       ],
-      "DebugActionIndex": 130
+      "DebugActionIndex": 131
     },
     {
       "Annotation": "CopyFiles D:/unity/fusionedtest/Fus_Data/Managed/mscorlib.dll",
@@ -1912,20 +1926,20 @@
       "Outputs": [
         "D:/unity/fusionedtest/Fus_Data/Managed/mscorlib.dll"
       ],
-      "DebugActionIndex": 131
+      "DebugActionIndex": 132
     },
     {
       "Annotation": "WriteText Library/Bee/artifacts/WinPlayerBuildProgram/Data/app.info",
       "DisplayName": "Writing app.info",
       "ActionType": "WriteFile",
-      "PayloadOffset": 16109,
+      "PayloadOffset": 16180,
       "PayloadLength": 18,
       "PayloadDebugContentSnippet": "DefaultCompany\nFus",
       "Inputs": [],
       "Outputs": [
         "Library/Bee/artifacts/WinPlayerBuildProgram/Data/app.info"
       ],
-      "DebugActionIndex": 132
+      "DebugActionIndex": 133
     },
     {
       "Annotation": "CopyFiles D:/unity/fusionedtest/Fus_Data/app.info",
@@ -1938,9 +1952,9 @@
         "D:/unity/fusionedtest/Fus_Data/app.info"
       ],
       "ToBuildDependencies": [
-        132
+        133
       ],
-      "DebugActionIndex": 133
+      "DebugActionIndex": 134
     },
     {
       "Annotation": "CopyFiles D:/unity/fusionedtest/Fus_Data/Resources/unity default resources",
@@ -1952,7 +1966,7 @@
       "Outputs": [
         "D:/unity/fusionedtest/Fus_Data/Resources/unity default resources"
       ],
-      "DebugActionIndex": 134
+      "DebugActionIndex": 135
     },
     {
       "Annotation": "CopyFiles D:/unity/fusionedtest/Fus.exe",
@@ -1964,7 +1978,7 @@
       "Outputs": [
         "D:/unity/fusionedtest/Fus.exe"
       ],
-      "DebugActionIndex": 135
+      "DebugActionIndex": 136
     },
     {
       "Annotation": "CopyFiles D:/unity/fusionedtest/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll",
@@ -1976,7 +1990,7 @@
       "Outputs": [
         "D:/unity/fusionedtest/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll"
       ],
-      "DebugActionIndex": 136
+      "DebugActionIndex": 137
     },
     {
       "Annotation": "CopyFiles D:/unity/fusionedtest/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll",
@@ -1988,7 +2002,7 @@
       "Outputs": [
         "D:/unity/fusionedtest/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll"
       ],
-      "DebugActionIndex": 137
+      "DebugActionIndex": 138
     },
     {
       "Annotation": "CopyFiles D:/unity/fusionedtest/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser",
@@ -2000,7 +2014,7 @@
       "Outputs": [
         "D:/unity/fusionedtest/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser"
       ],
-      "DebugActionIndex": 138
+      "DebugActionIndex": 139
     },
     {
       "Annotation": "CopyFiles D:/unity/fusionedtest/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx",
@@ -2012,7 +2026,7 @@
       "Outputs": [
         "D:/unity/fusionedtest/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx"
       ],
-      "DebugActionIndex": 139
+      "DebugActionIndex": 140
     },
     {
       "Annotation": "CopyFiles D:/unity/fusionedtest/MonoBleedingEdge/etc/mono/2.0/machine.config",
@@ -2024,7 +2038,7 @@
       "Outputs": [
         "D:/unity/fusionedtest/MonoBleedingEdge/etc/mono/2.0/machine.config"
       ],
-      "DebugActionIndex": 140
+      "DebugActionIndex": 141
     },
     {
       "Annotation": "CopyFiles D:/unity/fusionedtest/MonoBleedingEdge/etc/mono/2.0/settings.map",
@@ -2036,7 +2050,7 @@
       "Outputs": [
         "D:/unity/fusionedtest/MonoBleedingEdge/etc/mono/2.0/settings.map"
       ],
-      "DebugActionIndex": 141
+      "DebugActionIndex": 142
     },
     {
       "Annotation": "CopyFiles D:/unity/fusionedtest/MonoBleedingEdge/etc/mono/2.0/web.config",
@@ -2048,7 +2062,7 @@
       "Outputs": [
         "D:/unity/fusionedtest/MonoBleedingEdge/etc/mono/2.0/web.config"
       ],
-      "DebugActionIndex": 142
+      "DebugActionIndex": 143
     },
     {
       "Annotation": "CopyFiles D:/unity/fusionedtest/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser",
@@ -2060,7 +2074,7 @@
       "Outputs": [
         "D:/unity/fusionedtest/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser"
       ],
-      "DebugActionIndex": 143
+      "DebugActionIndex": 144
     },
     {
       "Annotation": "CopyFiles D:/unity/fusionedtest/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx",
@@ -2072,7 +2086,7 @@
       "Outputs": [
         "D:/unity/fusionedtest/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx"
       ],
-      "DebugActionIndex": 144
+      "DebugActionIndex": 145
     },
     {
       "Annotation": "CopyFiles D:/unity/fusionedtest/MonoBleedingEdge/etc/mono/4.0/machine.config",
@@ -2084,7 +2098,7 @@
       "Outputs": [
         "D:/unity/fusionedtest/MonoBleedingEdge/etc/mono/4.0/machine.config"
       ],
-      "DebugActionIndex": 145
+      "DebugActionIndex": 146
     },
     {
       "Annotation": "CopyFiles D:/unity/fusionedtest/MonoBleedingEdge/etc/mono/4.0/settings.map",
@@ -2096,7 +2110,7 @@
       "Outputs": [
         "D:/unity/fusionedtest/MonoBleedingEdge/etc/mono/4.0/settings.map"
       ],
-      "DebugActionIndex": 146
+      "DebugActionIndex": 147
     },
     {
       "Annotation": "CopyFiles D:/unity/fusionedtest/MonoBleedingEdge/etc/mono/4.0/web.config",
@@ -2108,7 +2122,7 @@
       "Outputs": [
         "D:/unity/fusionedtest/MonoBleedingEdge/etc/mono/4.0/web.config"
       ],
-      "DebugActionIndex": 147
+      "DebugActionIndex": 148
     },
     {
       "Annotation": "CopyFiles D:/unity/fusionedtest/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser",
@@ -2120,7 +2134,7 @@
       "Outputs": [
         "D:/unity/fusionedtest/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser"
       ],
-      "DebugActionIndex": 148
+      "DebugActionIndex": 149
     },
     {
       "Annotation": "CopyFiles D:/unity/fusionedtest/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx",
@@ -2132,7 +2146,7 @@
       "Outputs": [
         "D:/unity/fusionedtest/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx"
       ],
-      "DebugActionIndex": 149
+      "DebugActionIndex": 150
     },
     {
       "Annotation": "CopyFiles D:/unity/fusionedtest/MonoBleedingEdge/etc/mono/4.5/machine.config",
@@ -2144,7 +2158,7 @@
       "Outputs": [
         "D:/unity/fusionedtest/MonoBleedingEdge/etc/mono/4.5/machine.config"
       ],
-      "DebugActionIndex": 150
+      "DebugActionIndex": 151
     },
     {
       "Annotation": "CopyFiles D:/unity/fusionedtest/MonoBleedingEdge/etc/mono/4.5/settings.map",
@@ -2156,7 +2170,7 @@
       "Outputs": [
         "D:/unity/fusionedtest/MonoBleedingEdge/etc/mono/4.5/settings.map"
       ],
-      "DebugActionIndex": 151
+      "DebugActionIndex": 152
     },
     {
       "Annotation": "CopyFiles D:/unity/fusionedtest/MonoBleedingEdge/etc/mono/4.5/web.config",
@@ -2168,7 +2182,7 @@
       "Outputs": [
         "D:/unity/fusionedtest/MonoBleedingEdge/etc/mono/4.5/web.config"
       ],
-      "DebugActionIndex": 152
+      "DebugActionIndex": 153
     },
     {
       "Annotation": "CopyFiles D:/unity/fusionedtest/MonoBleedingEdge/etc/mono/browscap.ini",
@@ -2180,7 +2194,7 @@
       "Outputs": [
         "D:/unity/fusionedtest/MonoBleedingEdge/etc/mono/browscap.ini"
       ],
-      "DebugActionIndex": 153
+      "DebugActionIndex": 154
     },
     {
       "Annotation": "CopyFiles D:/unity/fusionedtest/MonoBleedingEdge/etc/mono/config",
@@ -2192,7 +2206,7 @@
       "Outputs": [
         "D:/unity/fusionedtest/MonoBleedingEdge/etc/mono/config"
       ],
-      "DebugActionIndex": 154
+      "DebugActionIndex": 155
     },
     {
       "Annotation": "CopyFiles D:/unity/fusionedtest/MonoBleedingEdge/etc/mono/mconfig/config.xml",
@@ -2204,7 +2218,7 @@
       "Outputs": [
         "D:/unity/fusionedtest/MonoBleedingEdge/etc/mono/mconfig/config.xml"
       ],
-      "DebugActionIndex": 155
+      "DebugActionIndex": 156
     },
     {
       "Annotation": "CopyFiles D:/unity/fusionedtest/UnityCrashHandler64.exe",
@@ -2216,7 +2230,7 @@
       "Outputs": [
         "D:/unity/fusionedtest/UnityCrashHandler64.exe"
       ],
-      "DebugActionIndex": 156
+      "DebugActionIndex": 157
     },
     {
       "Annotation": "CopyFiles D:/unity/fusionedtest/UnityPlayer.dll",
@@ -2228,7 +2242,7 @@
       "Outputs": [
         "D:/unity/fusionedtest/UnityPlayer.dll"
       ],
-      "DebugActionIndex": 157
+      "DebugActionIndex": 158
     },
     {
       "Annotation": "Player",
@@ -2365,7 +2379,7 @@
         129,
         130,
         131,
-        133,
+        132,
         134,
         135,
         136,
@@ -2389,10 +2403,11 @@
         154,
         155,
         156,
-        157
+        157,
+        158
       ],
       "OverwriteOutputs": false,
-      "DebugActionIndex": 158
+      "DebugActionIndex": 159
     }
   ],
   "FileSignatures": [
@@ -2596,7 +2611,7 @@
   "EmitDataForBeeWhy": 0,
         "NamedNodes": {
           "all_tundra_nodes": 0,
-          "Player": 158
+          "Player": 159
         }
 ,  "DefaultNodes": [
     0
