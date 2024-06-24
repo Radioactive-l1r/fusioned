@@ -20,7 +20,7 @@ public class playerController : NetworkBehaviour
     [Networked]
 
     public int Mygems { get; set; }
-    GameObject MapCam;
+    GameObject MapCamAnchor;
 
     public NetworkObject PlayerIcon;
     private void Awake()
@@ -37,13 +37,13 @@ public class playerController : NetworkBehaviour
             Camera.main.gameObject.SetActive(false);
             TX_totalgems = GameObject.Find("TX_totalgems").GetComponent<TMP_Text>();
             TX_totalgems.SetText("local");
-            MapCam = GameObject.Find("MapCam");
+            MapCamAnchor = GameObject.Find("MapCamAnchor");
 
-           
 
-            MapCam.transform.SetParent(transform);
 
-            MapCam.transform.localPosition = new Vector3(0, 10, 0);
+
+            MapCamAnchor.transform.localPosition = new Vector3(0, 10, 0);
+            FindObjectOfType<MiniMapController>().gameObject.GetComponent<MiniMapController>().Player = this.transform;
 
 
 
@@ -60,7 +60,7 @@ public class playerController : NetworkBehaviour
         {
 
             float mouseX = data.mouseX;
-            transform.Rotate(0, mouseX*5, 0);
+            transform.Rotate(0, mouseX*3, 0);
 
             if (_cc.isGrounded)
             {
@@ -124,9 +124,7 @@ public class playerController : NetworkBehaviour
         {
             TX_totalgems.SetText("gems : " + Mygems);
         }
-        if(MapCam != null)
-        {
-        }
+        
 
         PlayerIcon.transform.position = new Vector3(transform.position.x, 8, transform.position.z);
         PlayerIcon.transform.rotation=transform.rotation;

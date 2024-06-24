@@ -6,10 +6,13 @@ using UnityEngine.UI;
 
 public class MiniMapController : MonoBehaviour, IPointerClickHandler
 {
+
+    public Transform Player;
+    public Transform MapAnchor;
     public Camera miniMapCam;
-    public float cameraMoveSpeed = 2f;
+    public float cameraMoveSpeed = 10f;
     Vector3 targerPosition;
-    bool isMoving=false;
+   public bool isMoving=false;
     public void OnPointerClick(PointerEventData eventData)
     {
         if (RectTransformUtility.ScreenPointToLocalPointInRectangle(GetComponent<RawImage>().rectTransform, eventData.pressPosition, eventData.pressEventCamera, out Vector2 localCursorPoint))
@@ -31,9 +34,9 @@ public class MiniMapController : MonoBehaviour, IPointerClickHandler
         if (Physics.Raycast(miniMapRay, out RaycastHit miniMapHit, Mathf.Infinity))
         {
             Debug.DrawRay(miniMapHit.point, miniMapHit.normal * 0.5f, Color.blue);
-            GameObject cube = GameObject.CreatePrimitive(PrimitiveType.Cube);
-            cube.transform.position = miniMapHit.point;
-            targerPosition = new Vector3(miniMapHit.point.x,miniMapCam.transform.position.y,miniMapHit.transform.position.z);
+           // GameObject cube = GameObject.CreatePrimitive(PrimitiveType.Cube);
+          //  cube.transform.position = miniMapHit.point;
+            targerPosition = new Vector3(miniMapHit.point.x,miniMapCam.transform.position.y,miniMapHit.point.z);
 
         
 
@@ -42,6 +45,7 @@ public class MiniMapController : MonoBehaviour, IPointerClickHandler
 
     private void Update()
     {
+        MapAnchor.transform.position = Player.transform.position;
         if (Input.GetMouseButtonDown(0))
         {
 
@@ -52,6 +56,15 @@ public class MiniMapController : MonoBehaviour, IPointerClickHandler
         if(isMoving)
         {
             miniMapCam.transform.position = Vector3.Lerp(miniMapCam.transform.position, targerPosition, Time.deltaTime * cameraMoveSpeed);
+            if (Vector3.Distance(miniMapCam.transform.position, targerPosition) < 0.01f) // Adjust the threshold as needed
+            {
+                isMoving = false;
+            }
         }
+        if(Input.GetKeyDown(KeyCode.R))
+        {
+            miniMapCam.transform.localPosition = new Vector3(0,25,0);
+        }
+
     }
 }
