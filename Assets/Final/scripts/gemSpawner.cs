@@ -10,7 +10,10 @@ public class gemSpawner : NetworkBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        foreach (Transform spawnT in transform)
+        {
+            spawnT.gameObject.GetComponent<MeshRenderer>().enabled = false;
+        }
     }
 
     // Update is called once per frame
@@ -30,7 +33,6 @@ public class gemSpawner : NetworkBehaviour
 
         foreach(Transform spawnT in transform)
         {
-            spawnT.gameObject.GetComponent<MeshRenderer>().enabled = false;
             Runner.Spawn(gems, spawnT.position, Quaternion.identity);
         }
         isSpawned = true;

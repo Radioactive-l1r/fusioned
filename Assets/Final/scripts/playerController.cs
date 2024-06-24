@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Fusion;
 using TMPro;
+using Unity.VisualScripting;
 public class playerController : NetworkBehaviour
 {
     private CharacterController _cc;
@@ -16,6 +17,12 @@ public class playerController : NetworkBehaviour
   public  TMP_Text TX_totalgems;
 
     public NetworkObject gems;
+    [Networked]
+
+    public int Mygems { get; set; }
+    GameObject MapCam;
+
+    public NetworkObject PlayerIcon;
     private void Awake()
     {
        
@@ -30,6 +37,15 @@ public class playerController : NetworkBehaviour
             Camera.main.gameObject.SetActive(false);
             TX_totalgems = GameObject.Find("TX_totalgems").GetComponent<TMP_Text>();
             TX_totalgems.SetText("local");
+            MapCam = GameObject.Find("MapCam");
+
+           
+
+            MapCam.transform.SetParent(transform);
+
+            MapCam.transform.localPosition = new Vector3(0, 10, 0);
+
+
 
         }
         else
@@ -44,7 +60,7 @@ public class playerController : NetworkBehaviour
         {
 
             float mouseX = data.mouseX;
-            transform.Rotate(0, mouseX, 0);
+            transform.Rotate(0, mouseX*5, 0);
 
             if (_cc.isGrounded)
             {
@@ -63,21 +79,15 @@ public class playerController : NetworkBehaviour
                 }
             }
 
-            // Apply gravity
             moveDirection.y -= 20 * Runner.DeltaTime;
 
-            // Move the controller
             _cc.Move(moveDirection * Runner.DeltaTime);
-            //camera input
-            float mouseY = data.mouseY* 100f * Runner.DeltaTime;
+            float mouseY = data.mouseY* 150f * Runner.DeltaTime;
 
-            // Apply the mouse input to the camera's local X-axis rotation
             xRotation -= mouseY;
 
-            // Clamp the rotation to prevent the camera from rotating too far up or down
             xRotation = Mathf.Clamp(xRotation, -45f, 45f);
 
-            // Apply the rotation to the camera
             cam.transform.localRotation = Quaternion.Euler(xRotation, 0.0f, 0.0f);
             if (data.buttons.IsSet(MyButtons.space) && HasStateAuthority)
             {
@@ -94,16 +104,31 @@ public class playerController : NetworkBehaviour
     {
         if (other.gameObject.tag == "treasure")
         {
-            //Destroy(collision.gameObject);
          collectedGems++;
-          //  TX_totalgems.SetText("gems : " + collectedGems);
-          if(Object.HasInputAuthority)
+            Mygems++;
+            if (TX_totalgems!=null)
             {
-                TX_totalgems.SetText("gems : " + collectedGems);
+                TX_totalgems.SetText("gems : " + Mygems);
             }
-           
+
+          
+
+
             AudioManager.instance.PlayAudio("gem_collected");
             Runner.Despawn(other.gameObject.GetComponent<NetworkObject>());
         }
+    }
+    private void Update()
+    {
+        if (TX_totalgems != null)
+        {
+            TX_totalgems.SetText("gems : " + Mygems);
+        }
+        if(MapCam != null)
+        {
+        }
+
+        PlayerIcon.transform.position = new Vector3(transform.position.x, 8, transform.position.z);
+        PlayerIcon.transform.rotation=transform.rotation;
     }
 }
