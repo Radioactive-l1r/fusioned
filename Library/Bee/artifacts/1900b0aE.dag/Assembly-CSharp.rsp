@@ -374,6 +374,7 @@
 "Assets/Final/scripts/AudioManager.cs"
 "Assets/Final/scripts/gemSpawner.cs"
 "Assets/Final/scripts/menu.cs"
+"Assets/Final/scripts/MiniMapController.cs"
 "Assets/Final/scripts/playerController.cs"
 "Assets/Final/scripts/Spawner.cs"
 "Assets/Scenes/BasicSpawner.cs"

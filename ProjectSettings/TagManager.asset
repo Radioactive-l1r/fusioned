@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - treasure
+  - MiniCamera
   layers:
   - Default
   - TransparentFX

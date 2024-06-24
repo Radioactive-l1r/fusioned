@@ -110,6 +110,7 @@
     <Compile Include="Assets\Scenes\playerData.cs" />
     <Compile Include="Assets\Scenes\followCamHolder.cs" />
     <Compile Include="Assets\Final\scripts\playerController.cs" />
+    <Compile Include="Assets\Final\scripts\MiniMapController.cs" />
     <Compile Include="Assets\Scenes\Player.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextInfoDebugTool.cs" />
   </ItemGroup>

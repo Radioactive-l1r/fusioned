@@ -450,6 +450,8 @@ GameObject:
   - component: {fileID: 239089543}
   - component: {fileID: 239089545}
   - component: {fileID: 239089544}
+  - component: {fileID: 239089546}
+  - component: {fileID: 239089547}
   m_Layer: 5
   m_Name: miniMap
   m_TagString: Untagged
@@ -511,6 +513,41 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 239089542}
   m_CullTransparentMesh: 0
+--- !u!65 &239089546
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 239089542}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &239089547
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 239089542}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e09dc1d6897d04941aad3422bdf2f9e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  miniMapCam: {fileID: 1969349439}
+  cameraMoveSpeed: 2
 --- !u!1 &626085779
 GameObject:
   m_ObjectHideFlags: 0
@@ -2829,7 +2866,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1969349440}
   - component: {fileID: 1969349439}
-  - component: {fileID: 1969349438}
   m_Layer: 0
   m_Name: MapCam
   m_TagString: Untagged
@@ -2837,14 +2873,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!81 &1969349438
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1969349437}
-  m_Enabled: 1
 --- !u!20 &1969349439
 Camera:
   m_ObjectHideFlags: 0
