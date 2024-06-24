@@ -127,9 +127,10 @@ public class Spawner : MonoBehaviour, INetworkRunnerCallbacks
             // Vector3 spawnPosition = new Vector3(-50, -10, player.PlayerId+2);
             //            Vector3 spawnPosition = new Vector3(player.PlayerId, 2, 0);
 
-            Vector3 spawnPosition = new Vector3(-50, -10, (player.RawEncoded % runner.Config.Simulation.PlayerCount) * 3);
+            Vector3 spawnPosition = new Vector3(5, 5, (player.RawEncoded % runner.Config.Simulation.PlayerCount) * 3);
 
             NetworkObject networkPlayerObject = runner.Spawn(_playerPrefab, spawnPosition, Quaternion.identity, player);
+            networkPlayerObject.GetComponent<CharacterController>().enabled = true;
             // Keep track of the player avatars for easy access
             _spawnedCharacters.Add(player, networkPlayerObject);
 

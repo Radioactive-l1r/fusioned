@@ -124,7 +124,7 @@ CharacterController:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Height: 2
   m_Radius: 0.5
@@ -148,6 +148,7 @@ MonoBehaviour:
   _gems: {fileID: 0}
   moveSpeed: 6
   cam: {fileID: 8272481201226192799}
+  gems: {fileID: 0}
 --- !u!114 &4912152430987704580
 MonoBehaviour:
   m_ObjectHideFlags: 0

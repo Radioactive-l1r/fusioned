@@ -13,7 +13,7 @@ public class playerController : NetworkBehaviour
     float xRotation;
     int collectedGems = 0;
     //
-    TMP_Text TX_totalgems;
+  public  TMP_Text TX_totalgems;
 
     public NetworkObject gems;
     private void Awake()
@@ -29,7 +29,7 @@ public class playerController : NetworkBehaviour
         {
             Camera.main.gameObject.SetActive(false);
             TX_totalgems = GameObject.Find("TX_totalgems").GetComponent<TMP_Text>();
-
+            TX_totalgems.SetText("local");
 
         }
         else
@@ -64,10 +64,10 @@ public class playerController : NetworkBehaviour
             }
 
             // Apply gravity
-            moveDirection.y -= 20 * Time.deltaTime;
+            moveDirection.y -= 20 * Runner.DeltaTime;
 
             // Move the controller
-            _cc.Move(moveDirection * Time.deltaTime);
+            _cc.Move(moveDirection * Runner.DeltaTime);
             //camera input
             float mouseY = data.mouseY* 100f * Runner.DeltaTime;
 
@@ -95,9 +95,13 @@ public class playerController : NetworkBehaviour
         if (other.gameObject.tag == "treasure")
         {
             //Destroy(collision.gameObject);
-
-           // collectedGems++;
+         collectedGems++;
           //  TX_totalgems.SetText("gems : " + collectedGems);
+          if(Object.HasInputAuthority)
+            {
+                TX_totalgems.SetText("gems : " + collectedGems);
+            }
+           
             AudioManager.instance.PlayAudio("gem_collected");
             Runner.Despawn(other.gameObject.GetComponent<NetworkObject>());
         }
