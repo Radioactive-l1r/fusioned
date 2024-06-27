@@ -8,6 +8,7 @@ public class playerController : NetworkBehaviour
 {
     private CharacterController _cc;
     public NetworkObject _gems;
+    public NetworkObject _gemSpawnEffect;
     public float moveSpeed = 5f;
     private Vector3 moveDirection = Vector3.zero;
     public Transform cam;
@@ -111,8 +112,8 @@ public class playerController : NetworkBehaviour
                 TX_totalgems.SetText("gems : " + Mygems);
             }
 
-          
 
+            Runner.Spawn(_gemSpawnEffect, other.gameObject.transform.position, Quaternion.identity);
 
             AudioManager.instance.PlayAudio("gem_collected");
             Runner.Despawn(other.gameObject.GetComponent<NetworkObject>());
